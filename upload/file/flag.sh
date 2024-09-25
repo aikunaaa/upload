@@ -16,7 +16,7 @@
 # Reset mysql root's passwors as random string
 #mysql -uroot -proot -e "UPDATE mysql.user SET Password=PASSWORD(substring(MD5(RAND()),1,20)) WHERE user='root';"
 
-sed -i "s/FLAGFLAGFLAG/$GZCTF_FLAG/g" "/var/www/html/include.php"
+sed -i "s/FLAGFLAGFLAG/$GZCTF_FLAG/g" "/flag"
 
 export FLAG=not_flag
 FLAG=not_flag
